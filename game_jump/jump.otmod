@@ -1,0 +1,9 @@
+Module
+  name: game_jump
+  description: Jump
+  author: Cookey
+  website: https://charlescookey.com/
+  sandboxed: true
+  scripts: [ jump ]
+  @onLoad: init()
+  @onUnload: terminate()

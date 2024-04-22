@@ -1,0 +1,17 @@
+
+MainWindow
+  id: jumpWindow
+  !text: tr('Jump Test')
+  size: 350 400
+  phantom: false
+  @onEscape: toggle()
+
+
+  Button
+    id: randomizeButton
+    !text: tr('Jump!')
+    width: 64
+    !tooltip: tr('Jumps when you click')
+    anchors.top: parent.top
+    anchors.right: parent.right
+    @onClick: modules.game_jump.randomPosition()
